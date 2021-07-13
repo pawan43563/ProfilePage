@@ -1,0 +1,329 @@
+ body{
+    background-color: #0f0e17;
+    box-sizing: border-box;
+    font-family: 'Acme', sans-serif;
+    color:#fffffe;
+    width: 80%;
+    margin: 10px auto;
+    scroll-behavior: smooth;
+
+}
+
+li{
+    list-style:none;
+}
+
+
+
+a{
+    text-decoration: none;
+    color: #fffffe;
+}
+
+.nav-link{
+    color:#fffffe;
+}
+.nav-link:hover{
+    color: #ff8906;
+}
+
+
+
+#navigation{
+    display: flex;
+    justify-content: space-between;
+
+
+}
+#header{
+    position: sticky;
+    top:0px;
+    background-color: #0f0e17;
+    z-index: 999;
+    
+}
+.nav-container{
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+
+a > .humburger{
+    font-size: 30px;
+    margin-top:20px;
+}
+
+
+
+
+
+
+
+.nav-item{
+    font-size: 20px;
+}
+
+
+.logo{
+    width:80px;
+    height: 90px;
+}
+
+
+
+.banner{
+    display: flex;
+    margin:40px auto;
+    padding:30px;
+    flex-wrap: wrap;
+}
+
+.section{
+    text-align: center;
+    margin:40px;
+    /* padding-top:110px; */
+}
+
+.project-link{
+    font-size: 30px;
+}
+
+.resume{
+    font-size: 20px;
+    padding:3px;
+    border-radius: 8px;
+    background-color: #ff8906;
+    margin-top:10px;
+    display: inline-block;
+
+}
+.project-link:hover{
+    color:#ff8906;
+}
+.resume:hover{
+    background-color: #e53170;
+}
+
+.designation,p{
+    color:#a7a9be;
+}
+
+
+.profile{
+    
+    height: 300px;
+    border-radius: 50%;
+    margin-right:50px;  
+    
+}
+
+.about-me-content{
+    border:2px solid black;
+    background-color: #a7a9be;
+    color:#0f0e17;
+    width:60%;
+    margin:20px auto;
+}
+
+.heading{
+    margin:10px auto;
+ 
+}
+
+@media (min-width:1235px)  {
+    .heading{
+        margin:0px 10px;
+        transition:all 2s 1s linear;
+        transform:translateX(400px);
+    }
+}​
+
+
+.project{
+    padding:20px;
+    margin:20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.project-image{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-img{
+    width: 45%;
+    margin:10px;
+}
+
+.content{
+    text-align: center;
+    width: 60%;
+    margin:0px auto;
+}
+
+@media only screen and (max-width: 900px) {
+    .content {
+      width:100%;
+    }
+    .project-img{
+        width: 100%;
+    }
+    .profile{
+        height: 200px;
+        display: block;
+        margin:10px auto;
+    }
+    .about-me-content{
+        width: 100%;
+    }
+  }
+
+
+.project-img{
+    height: 300px;
+    margin:20px;
+}
+
+
+
+
+.skill-card{
+    width:460px;
+    height:auto;
+    border:2px solid black;
+    background-color: #a7a9be;
+    color:#0f0e17;
+    margin:10px;
+
+}
+
+.skill-heading{
+    margin:0px;
+}
+.skill-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill-content{
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    margin:20px 20px;
+}
+.skill-logo{
+    width:40px;
+}
+.back{
+    background-color: black;
+}
+
+.lang{
+    margin:0px 15px;
+}
+
+.tools{
+    color:#0f0e17;
+}
+
+
+.certificates{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.certi-title{
+    text-align: center;
+
+}
+
+.btn{
+    background-color: #ff8906;
+    padding: 3px;
+    border-radius: 8px;
+}
+
+.btn:hover{
+    background-color: #e53170;
+    color:white;
+}
+
+
+
+.certi-img{
+    width:250px;
+    height: 250px;
+    margin: 10px 20px;
+
+}
+
+@media only screen and (max-width:378) {
+    .certis > img{
+        padding:0px;
+    }
+
+}
+
+
+
+.certi-title:hover{
+    color:#ff8906;
+}
+
+
+.fa:hover{
+    color:#ff8906;
+}
+
+.Contact{
+    display: flex;
+    width: 60%;
+    justify-content: space-evenly;
+    font-size: 30px;
+    margin:50px auto;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+hr{
+    margin-bottom:100px;
+}
+
+.toggle{
+    display: none;
+}
+
+
+@media only screen and (max-width:1295px){
+    .active{
+        display: none;
+    }
+
+    .nav-container{
+        flex-direction: column;
+        height: 250px;
+        margin-top:20px;
+    }
+
+    .toggle{
+        display: block;
+    }
+    .logo-link {
+        float: right;
+        order:3;
+    }
+}
+
+
+
