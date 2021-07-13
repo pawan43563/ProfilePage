@@ -9,9 +9,28 @@ body{
     color:#fffffe;
     width: 80%;
     margin: 10px auto;
+}
 
+hr{
+    border: 1px solid white;
+}
+
+.navbar-nav{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
 
 }
+
+.navbar{
+    background-color: #0f0e17;
+    width:80%;
+    margin:auto;
+    height: auto;
+}
+
+
+
 
 li{
     list-style:none;
@@ -33,33 +52,25 @@ a{
 
 
 
-#navigation{
-    display: flex;
-    justify-content: space-between;
-
-
-}
-#header{
-    position: sticky;
-    top:0px;
-    background-color: #0f0e17;
-    z-index: 999;
-    
-}
 .nav-container{
     display: flex;
     width: 60%;
+
     justify-content: space-between;
-    flex-wrap: wrap;
+    margin: auto;
 }
 
 
 
-a > .humburger{
+
+.humburger{
     font-size: 30px;
-    margin-top:20px;
+    color:white;
 }
 
+.humburger:hover{
+    color:#ff8906;
+}
 
 
 
@@ -73,14 +84,14 @@ a > .humburger{
 
 .logo{
     width:80px;
-    height: 90px;
+    height: 60px;
 }
 
 
 
 .banner{
     display: flex;
-    margin:40px auto;
+    margin-top:150px;
     padding:30px;
     flex-wrap: wrap;
 }
@@ -88,7 +99,7 @@ a > .humburger{
 .section{
     text-align: center;
     margin:40px;
-    /* padding-top:110px; */
+
 }
 
 .project-link{
@@ -133,8 +144,9 @@ a > .humburger{
 }
 
 .heading{
+
     margin:10px auto;
- 
+    padding:20px;
 }
 
 @media (min-width:1235px)  {
@@ -251,7 +263,9 @@ a > .humburger{
 
 .btn{
     background-color: #ff8906;
-    padding: 3px;
+
+    display: inline-block;
+
     border-radius: 8px;
 }
 
@@ -304,31 +318,6 @@ hr{
     margin-bottom:100px;
 }
 
-.toggle{
-    display: none;
-}
-
-
-@media only screen and (max-width:1295px){
-    .active{
-        display: none;
-    }
-
-    .nav-container{
-        flex-direction: column;
-        height: 250px;
-        margin-top:20px;
-
-    }
-
-    .toggle{
-        display: block;
-    }
-    .logo-link {
-        float: right;
-        order:3;
-    }
-}
 
 
 
