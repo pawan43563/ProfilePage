@@ -1,11 +1,15 @@
- body{
+html{
+    scroll-behavior: smooth;
+}
+
+body{
     background-color: #0f0e17;
     box-sizing: border-box;
     font-family: 'Acme', sans-serif;
     color:#fffffe;
     width: 80%;
     margin: 10px auto;
-    scroll-behavior: smooth;
+
 
 }
 
@@ -314,6 +318,7 @@ hr{
         flex-direction: column;
         height: 250px;
         margin-top:20px;
+
     }
 
     .toggle{
