@@ -12,9 +12,6 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="./styles.css/home.css">
 
@@ -23,30 +20,8 @@
 
     <!-- navigation bar -->
 
-        <nav class="navbar navbar-expand-lg fixed-top" >
-            <a class="navbar-brand" href="#"><img src="./images/logo.png" alt="Logo" class="logo"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fa fa-bars humburger"></i>
-            </button>
-          
-            <div class=" collapse navbar-collapse" id="navbarSupportedContent" toggle="collapse" data-target=".navbar-collapse">
-              
-
-                <ul class="navbar-nav ml-auto " >
-                    <li class="nav-item"><a href="#about-me-nav" 
-                        class="nav-link" >About Me</a></li>
-                    <li class="nav-item"><a href="#projects-nav"  class="nav-link" onclick="clicked()">Projects</a></li>
-                    <li class="nav-item"><a href="#skills-nav" class="nav-link " >Skills</a></li>
-                    <li class="nav-item"><a href="#certificates-nav" class="nav-link " >Certificates</a></li>
-                    <li class="nav-item"><a href="#contact-me-nav" class="nav-link btn" >Contact Me</a></li>
-                    
-                  </ul>
-
-                
-            </div>
-          </nav>
        
-        <!--     <div id="header" >
+    <div id="header" >
         <div id="navigation">
 
                 <li class="toggle "><a href="#nav-container">
@@ -54,11 +29,11 @@
 
             
 
-                <a href="#" class="logo-link"> <img src="./images/logo.png" alt="Logo" class="logo"></a>
+                <a href="#overview" class="logo-link"> <img src="./images/logo.png" alt="Logo" class="logo"></a>
 
 
                 <ul class="nav-container active" id="nav-container">
-                    <li class="nav-item"><a href="#about-me-nav" class="nav-link" onclick="clicked()">About Me</a></li>
+                    <!-- <li class="nav-item"><a href="#about-me-nav" class="nav-link" onclick="clicked()">About Me</a></li> -->
                     <li class="nav-item"><a href="#projects-nav" class="nav-link" onclick="clicked()">Projects</a></li>
                     <li class="nav-item"><a href="#skills-nav" class="nav-link " onclick="clicked()">Skills</a></li>
                     <li class="nav-item"><a href="#certificates-nav" class="nav-link " onclick="clicked()">Certificates</a></li>
@@ -69,9 +44,9 @@
             
             
         </div>
-    </div> -->
+    </div>
 
-
+    <hr id="overview" style="border:1px solid #0f0e17">
 
         
     <!-- banner section -->
@@ -225,13 +200,13 @@
     <h1 class="section" id="contact-me-nav" style="padding-top: 0px;">Contact Me</h1>
     <footer id="footer">
         <div class="Contact">
-            <a href="https://www.facebook.com/people/Pawan-Sharma/100007052266455" target="__blank">
+            <!-- <a href="https://www.facebook.com/people/Pawan-Sharma/100007052266455" target="__blank">
                 <i class="fa fa-facebook"></i>
             </a>
 
             <a href="https://mail.google.com/mail/?view=cm&fs=1&to=+pawan.ps43563@gmail.com" target="__blank">
                 <i class="fa fa-envelope"></i>
-            </a>
+            </a> -->
             <a href="https://in.linkedin.com/in/pawan43563" target="__blank">
                 <i class="fa fa-linkedin"></i>
             </a>
@@ -252,35 +227,33 @@
 
 <script>
 
-// function togglenav(event){
-//         var x=document.getElementsByClassName("nav-container")[0]
-//         var x1=document.getElementsByClassName("toggle")[0]
-//         if (x.classList.contains("active")){
-//             x.style.display="none";
-//             x.classList.remove("active");
-//         }else{
+function togglenav(event){
+        var x=document.getElementsByClassName("nav-container")[0]
+        var x1=document.getElementsByClassName("toggle")[0]
+        if (x.classList.contains("active")){
+            x.style.display="none";
+            x.classList.remove("active");
+        }else{
 
-//             x.classList.add("active");
-//             x.style.display="flex";
+            x.classList.add("active");
+            x.style.display="flex";
 
-//         }
-//     }
+        }
+    }
 
-//     function clicked(e){
-//         var x=document.getElementsByClassName("toggle")[0]
-//         var x1=document.getElementsByClassName("nav-container")[0]
-//         if (window.innerWidth<1295){
-//             x1.style.display="none";
-//         }
+    function clicked(e){
+        var x=document.getElementsByClassName("toggle")[0]
+        var x1=document.getElementsByClassName("nav-container")[0]
+        if (window.innerWidth<1295){
+            x1.style.display="none";
+        }
 
-//     }
-
-
+    }
 
 
-    $('.navbar-collapse a').click(function(){
-            $(".navbar-collapse").collapse('hide');
-        });
+
+
+
 
 </script>
 
