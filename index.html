@@ -3,8 +3,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pawan Sharma</title>
-    <link rel="stylesheet" href="./styles.css/home.css">
+    <title>Pawan Sharma's Portfolio</title>
+   
     <link rel="icon" href="./favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,36 +13,14 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
+    <link rel="stylesheet" href="./styles.css/home.css">
 
 </head>
 <body>
 
     <!-- navigation bar -->
 
-
-    <!-- <nav id="navigation" class="header">
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-          <i class="fa fa-bars"></i>
-        </label>
-        <label ><img src="./images/logo.png" alt="Logo" class="logo"></label>
-        <ul class="nav-container" id="nav-container">
-                  <li class="nav-item"><a href="#about-me-nav" class="nav-link">About Me</a></li>
-                  <li class="nav-item"><a href="#projects-nav" class="nav-link">Projects</a></li>
-                  <li class="nav-item"><a href="#skills-nav" class="nav-link">Skills</a></li>
-                  <li class="nav-item"><a href="#certificates-nav" class="nav-link">Certificates</a></li>
-                  <li class="nav-item"><a href="#contact-me-nav" class="nav-link">Contact Me</a></li>
-                  
-              </ul>
-   </nav> -->
-   
-   
-   
-   
-
-
-
-
+       
     <div id="header" >
         <div id="navigation">
 
@@ -51,11 +29,11 @@
 
             
 
-                <a href="#" class="logo-link"> <img src="./images/logo.png" alt="Logo" class="logo"></a>
+                <a href="#overview" class="logo-link"> <img src="./images/logo.png" alt="Logo" class="logo"></a>
 
 
                 <ul class="nav-container active" id="nav-container">
-                    <li class="nav-item"><a href="#about-me-nav" class="nav-link" onclick="clicked()">About Me</a></li>
+                    <!-- <li class="nav-item"><a href="#about-me-nav" class="nav-link" onclick="clicked()">About Me</a></li> -->
                     <li class="nav-item"><a href="#projects-nav" class="nav-link" onclick="clicked()">Projects</a></li>
                     <li class="nav-item"><a href="#skills-nav" class="nav-link " onclick="clicked()">Skills</a></li>
                     <li class="nav-item"><a href="#certificates-nav" class="nav-link " onclick="clicked()">Certificates</a></li>
@@ -67,7 +45,8 @@
             
         </div>
     </div>
-    
+
+    <hr id="overview" style="border:1px solid #0f0e17">
 
         
     <!-- banner section -->
@@ -78,13 +57,12 @@
             
 
         <div class="heading" >
-            <h1>Hello ,</h1>
-            <h2 class="name">I'm Pawan Sharma</h2>
+            <h2>Hello ,</h2>
+            <h3 class="name">I'm Pawan Sharma</h3>
             <p class="designation">A Full Stack Developer</p>
             <a href="./resume.pdf" class="resume" download>Resume</a>
         </div>
     </div>
-
 
 
     <!-- About Me section -->
@@ -192,13 +170,13 @@
         <div class="certis">
             <img src="./images/server.jpeg" alt="" class="certi-img">
             <a href="https://coursera.org/share/99605a799b494b584f67c68eb8009b10" class="certi-title" target="__blank">
-                <h4>Server-side Development with NodeJS, <br> Express and MongoDB</h4>
+                <h4>Server-side Development </h4>
             </a>
         </div>
         <div class="certis">
             <img src="./images/frontend.jpeg" alt="" class="certi-img">
             <a href="https://coursera.org/share/67d890c40876fcbb8224d7e85bf04ad2" class="certi-title" target="__blank">
-                <h4 class="certi-title">Front-End Web Development with React</h4>
+                <h4 class="certi-title">Front-End Web Development </h4>
             </a>
         </div>
         <div class="certis">
@@ -222,28 +200,34 @@
     <h1 class="section" id="contact-me-nav" style="padding-top: 0px;">Contact Me</h1>
     <footer id="footer">
         <div class="Contact">
-            <a href="https://www.facebook.com/people/Pawan-Sharma/100007052266455" target="__blank">
+            <!-- <a href="https://www.facebook.com/people/Pawan-Sharma/100007052266455" target="__blank">
                 <i class="fa fa-facebook"></i>
             </a>
 
             <a href="https://mail.google.com/mail/?view=cm&fs=1&to=+pawan.ps43563@gmail.com" target="__blank">
                 <i class="fa fa-envelope"></i>
-            </a>
+            </a> -->
             <a href="https://in.linkedin.com/in/pawan43563" target="__blank">
                 <i class="fa fa-linkedin"></i>
             </a>
             <a href="https://github.com/pawan43563" target="__blank">
                 <i class="fa fa-github"></i>
             </a>
-            
+           
         </div>
+        
     </footer>
-    
+    <div class="copyright">
+        <p>©2021 Pawan Sharma</p>
+    </div>
+
+        
+   
 
 
 <script>
 
-    function togglenav(event){
+function togglenav(event){
         var x=document.getElementsByClassName("nav-container")[0]
         var x1=document.getElementsByClassName("toggle")[0]
         if (x.classList.contains("active")){
@@ -265,6 +249,11 @@
         }
 
     }
+
+
+
+
+
 
 </script>
 
