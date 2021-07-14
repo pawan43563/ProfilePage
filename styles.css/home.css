@@ -128,10 +128,11 @@ a > .humburger{
   color:#0f0e17;
   width:60%;
   margin:20px auto;
+  padding: 10px;
 }
 
 .heading{
-  margin:10px auto;
+  margin:0px auto;
 
 }
 
