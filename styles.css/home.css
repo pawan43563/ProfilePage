@@ -128,11 +128,13 @@ a > .humburger{
   color:#0f0e17;
   width:60%;
   margin:20px auto;
-  padding: 10px;
+  padding: 20px;
+  text-align: justify;
 }
 
 .heading{
-  margin:0px auto;
+  padding: 20px;
+  margin:40px auto;
 
 }
 
@@ -183,7 +185,7 @@ a > .humburger{
       margin:10px auto;
   }
   .about-me-content{
-      width: 100%;
+      width: 90%;
   }
 }
 
@@ -203,6 +205,7 @@ a > .humburger{
   background-color: #a7a9be;
   color:#0f0e17;
   margin:10px;
+  padding:5px;
 
 }
 
@@ -262,7 +265,7 @@ a > .humburger{
 
 
 .certi-img{
-  width:250px;
+  width:280px;
   height: 250px;
   margin: 10px 20px;
 
