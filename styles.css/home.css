@@ -46,6 +46,7 @@ a{
   top:0px;
   background-color: #0f0e17;
   z-index: 999;
+  box-shadow: 0 8px 6px -10px white;
   
 }
 .nav-container{
